@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ナルト恐竜ゲーム｜無料で遊べるアクションゲーム</title>
+<meta name="description" content="ナルト恐竜ゲーム 🦖でスリル満点の冒険に挑戦しよう！シンプルな操作でナルトと一緒に障害物を乗り越えながら、できるだけ長く走り続けよう。無料プレイ可能！">
+<link rel="canonical" href="https://kaloodinaz.github.io/dinosaurgame/naruto/"> 
+<link rel="apple-touch-icon" sizes="180x180" href="https://kaloodinaz.github.io/dinosaurgame/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kaloodinaz.github.io/dinosaurgame/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kaloodinaz.github.io/dinosaurgame/img/favicon-16x16.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Open Sans",sans-serif;line-height:1.6;background-color:#f0f0f0}
+header{background-color:#0ba360;color:#fff;text-align:center;padding:.5rem;padding-left:20px}
+header span{display:block;text-align:center;font-size:24px;font-weight:700}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.game-container{margin:20px auto;text-align:center;max-width:800px}
+.game-frame{width:100%;max-width:800px;height:350px;border:none;background-color:#fff;box-shadow:0 2px 5px #0000001a}
+.game-info{max-width:800px;margin:20px auto;background-color:#fff;padding:20px;border-radius:5px;box-shadow:0 2px 5px #0000001a}
+.game-info h2{color:#0ba360;margin-bottom:5px;font-size:16px;font-weight:700}
+.game-info p{margin-bottom:10px}
+.game-icons{max-width:800px;margin:20px auto;text-align:center;display:flex;justify-content:space-evenly;padding:0 20px}
+.game-icons a{display:inline-block;text-decoration:none;text-align:center;flex:0 1 22%;max-width:120px}
+.game-icons img{transition:transform .2s;margin-bottom:5px}
+.game-icons .game-title{display:block;color:#666;font-size:14px;margin-top:5px;font-weight:700;min-height:40px}
+.game-icons img:hover{transform:scale(1.1)}
+footer{color:#666;text-align:center;padding:.5rem;font-size:14px;margin-top:20px}
+footer a{color:#666;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.game-info ul{padding-left:20px}
+.game-info li{margin:8px 0;padding:4px 0}
+.game-title-main{text-align:center;color:#333;margin:20px 0;font-size:24px}
+.block{display:flex;justify-content:center;align-items:center;margin:0 auto}
+.block-300{display:none;width:100%;height:250px;background-color:#8f7a66}
+.block-728{display:none;width:100%;max-width:728px;height:90px;background-color:#8f7a66}
+@media only screen and (max-width: 738px) {
+.block-300{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;margin-bottom:10px;border-radius:10px;margin-top:10px}
+.block-728{display:none}
+}
+@media only screen and (min-width: 739px) {
+.block-728{display:flex;justify-content:center;align-items:center;margin-bottom:10px;border-radius:10px;margin-top:10px}
+.block-300{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+<span>恐竜ゲーム</span>
+</header>
+
+<div class="container">
+<h1 class="game-title-main">走れ！ナルト恐竜ゲーム</h1>
+<div class="game-container">
+<iframe loading="lazy" src="game.html" class="game-frame" title="走れ！ナルト恐竜ゲーム" scrolling="no"></iframe>
+
+<p style="margin-top: 8px; font-size: 12px;color: #333;">
+📌 パソコンでは「スペースキー」を押してゲームをスタート！<br>
+📌 スマートフォンやタブレットでは「ナルト」アイコンをタップしてゲームを開始しよう！  
+</p>
+</div>
+        
+<div class="game-icons">
+<a href="https://kaloodinaz.github.io/dinosaurgame/">
+<img loading="lazy" src="https://kaloodinaz.github.io/dinosaurgame/img/dinosaurgame.png" alt="Google Chrome 恐竜ゲーム" width="80" height="80">
+<span class="game-title">恐竜ゲーム</span>
+</a>
+
+<a href="https://kaloodinaz.github.io/dinosaurgame/dino3d/">
+<img loading="lazy" src="https://kaloodinaz.github.io/dinosaurgame/img/3d-dinosaur-game.png" alt="Google Chrome 恐竜ゲーム3D" width="80" height="80">
+<span class="game-title">恐竜ゲーム3D</span>
+</a>
+          
+<a href="https://kaloodinaz.github.io/dinosaurgame/corona/">
+<img loading="lazy" src="https://kaloodinaz.github.io/dinosaurgame/img/corona-dinosaur-game.png" alt="走れ！コロナウイルス Google Chrome 恐竜ゲーム" width="80" height="80">
+<span class="game-title">走れ！コロナウイルス恐竜ゲーム</span>
+</a>
+<a href="https://blockbreaker2.pages.dev/">
+<img loading="lazy" src="https://kaloodinaz.github.io/dinosaurgame/img/google-block-breaker.webp" alt="Googleブロック ブレイカー" width="80" height="80">
+<span class="game-title">Googleブロック ブレイカー</span>
+</a>
+</div>
+<div class="game-info">
+    <h2>走れ！ナルト恐竜ゲーム紹介</h2>
+    <hr>
+    <div class="block block-728"><script type="text/javascript">
+     atOptions = {
+       'key' : 'd1d26e15f7c349fd8e403bb5ea491a31',
+       'format' : 'iframe',
+       'height' : 90,
+       'width' : 728,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/d1d26e15f7c349fd8e403bb5ea491a31/invoke.js"></script></div>
+       <div class="block block-300"><script type="text/javascript">
+     atOptions = {
+       'key' : '0fee57062f9bb330edc13a4e4349876d',
+       'format' : 'iframe',
+       'height' : 250,
+       'width' : 300,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/0fee57062f9bb330edc13a4e4349876d/invoke.js"></script></div>
+   
+    <p>「走れ！ナルト恐竜ゲーム」は、Chromeブラウザで遊べるオフラインゲームで、人気の「恐竜ゲーム」を元にしたゲームです。しかし、デザインやキャラクターが異なり、ナルトが登場することで新たな魅力が加わっています。インターネット接続がなくてもプレイでき、オフラインの際でも時間を楽しむことができます。</p>
+    
+    <p>ゲームの基本的な仕組みはシンプルで、ナルトを操作して障害物を避けながら進み、スコアを更新することが目的です。タイミングよくジャンプやしゃがみを駆使して、どれだけ遠くまで進めるかがゲームのポイントです。シンプルながらも奥が深いゲームプレイが楽しめます。</p>
+    
+    <h2>走れ！ナルト恐竜ゲームの新機能</h2>
+    <p>「走れ！ナルト恐竜ゲーム」では、従来の恐竜ゲームのシステムをベースにしつつ、ナルトのキャラクターが登場する新しい要素が追加されています。ナルトがジャンプしたり、しゃがんだり、障害物を避けたりするのを操作しながら、プレイヤーはスピード感と爽快感を楽しめます。</p>
+    
+    <p>また、ゲーム内でのスコアはリアルタイムで記録され、ハイスコアを目指して挑戦する楽しさが増しています。プレイ中に登場する特別なアイテムやスピードアップなど、ゲームの進行に影響を与える要素もあり、飽きずに何度でも挑戦できる仕組みです。</p>
+    
+    <h2>走れ！ナルト恐竜ゲームスクリーンショット</h2>
+    <img loading="lazy" src="https://kaloodinaz.github.io/dinosaurgame/img/naruto-dinosaur-game-screenshot.png" alt="走れ！ナルト恐竜ゲームのスクリーンショット" style="max-width: 100%; height: auto; margin: 10px 0; ">
+    
+    <h2>走れ！ナルト恐竜ゲーム操作方法</h2>
+    <ul>
+      <li>スペースキーでゲーム開始</li>
+      <li>スペースキーまたは上矢印キーでジャンプ</li>
+      <li>下矢印キーでしゃがむ（サメが現れた時に使用）</li>
+      <li>障害物を避け続けて、ハイスコアを目指しましょう！</li>
+    </ul>
+    
+    <h2>走れ！ナルト恐竜ゲームのヒントとコツ</h2>
+    <ul>
+      <li>障害物を避けるタイミングを計ることが大切です。</li>
+      <li>速いペースで進むと、障害物の出現頻度も増えます。集中力が重要です。</li>
+      <li>途中で現れるアイテムをうまく活用して、スコアを伸ばしましょう。</li>
+      <li>ナルトの動きに慣れることで、さらにスムーズにゲームを進めることができます。</li>
+    </ul>
+    
+    <h2>まとめ</h2>
+    <p>「走れ！ナルト恐竜ゲーム」は、シンプルながらも楽しいゲーム体験を提供します。ナルトのキャラクターが登場し、より魅力的になったこのゲームを、是非プレイしてみてください！</p>
+    
+</div>
+</div>
+<script>
+const gameFrame = document.querySelector('.game-frame');
+window.addEventListener('load', function() {
+gameFrame.focus();
+});
+window.addEventListener('keydown', function(e) {
+if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+e.preventDefault();
+gameFrame.focus();
+}
+});
+</script>
+<footer>
+<p>&copy; 2025 恐竜ゲーム. </p>
+<p><a href="https://suikagamejp.com/" target="_blank" rel="noopener">スイカゲーム</a> | <a href="https://kaloodinaz.github.io/2048-flappy/" target="_blank" rel="noopener">2048フラッピー</a></p>
+</footer>
+</body>
+</html>
