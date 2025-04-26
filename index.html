@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#3B3B3B"/>
+<meta name="robots" content="index, follow" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="apple-mobile-web-app-status-bar" content="#3B3B3B" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>恐竜ゲーム | オフラインで楽しむクラシックな恐竜ゲーム</title>
+<meta name="description" content="Chrome のオフラインモードで遊べる恐竜ゲーム 🦖。インターネット接続がない時でも楽しめるシンプルで楽しいゲームをプレイして、恐竜の冒険を楽しもう！">
+<link rel="canonical" href="https://kaloodinaz.github.io/dinosaurgame/"> 
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Open Sans",sans-serif;line-height:1.6;background-color:#f0f0f0}
+header{background-color:#0ba360;color:#fff;text-align:center;padding:.5rem;padding-left:20px}
+header span{font-size:24px;display:block;font-weight:700}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.game-container{margin:20px auto;text-align:center;max-width:800px}
+.game-frame{width:100%;max-width:800px;height:350px;border:none;background-color:#fff;box-shadow:0 2px 5px #0000001a}
+.game-info{max-width:800px;margin:20px auto;background-color:#fff;padding:20px;border-radius:5px;box-shadow:0 2px 5px #0000001a}
+.game-info h2{color:#0ba360;margin-bottom:5px;font-size:16px;font-weight:700}
+.game-info p{margin-bottom:10px}
+.game-icons{max-width:800px;margin:20px auto;text-align:center;display:flex;justify-content:space-evenly;padding:0 20px}
+.game-icons a{display:inline-block;text-decoration:none;text-align:center;flex:0 1 22%;max-width:120px}
+.game-icons img{transition:transform .2s;margin-bottom:5px}
+.game-icons .game-title{display:block;color:#666;font-size:14px;margin-top:5px;font-weight:700;min-height:40px}
+.game-icons img:hover{transform:scale(1.1)}
+footer{color:#666;text-align:center;padding:.5rem;font-size:14px;margin-top:20px}
+footer a{color:#666;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.game-info ul{padding-left:20px}
+.game-info li{margin:8px 0;padding:4px 0}
+.game-title-main{text-align:center;color:#333;margin:20px 0;font-size:24px}
+.block{display:flex;justify-content:center;align-items:center;margin:0 auto}
+.block-300{display:none;width:100%;height:250px;background-color:#8f7a66}
+.block-728{display:none;width:100%;max-width:728px;height:90px;background-color:#8f7a66}
+@media only screen and (max-width: 738px) {
+.block-300{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;margin-bottom:10px;border-radius:10px;margin-top:10px}
+.block-728{display:none}
+}
+@media only screen and (min-width: 739px) {
+.block-728{display:flex;justify-content:center;align-items:center;margin-bottom:10px;border-radius:10px;margin-top:10px}
+.block-300{display:none}
+}
+</style>
+</head>
+<body>
+<script>
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+.then(registration => {console.log('Service Worker registered successfully:', registration);})
+.catch(error => {console.log('Error in Service Worker registration:', error);});});}
+</script>
+<header>
+<span>恐竜ゲーム</span>
+</header>
+
+<div class="container">
+<h1 class="game-title-main">Google恐竜ゲーム</h1>
+<div class="game-container">
+<iframe loading="lazy" src="game.html" class="game-frame" title="恐竜ゲーム" id="gameFrame" allowfullscreen></iframe>
+
+  
+</div>
+        
+<div class="game-icons">
+<a href="https://kaloodinaz.github.io/dinosaurgame/dino3d/">
+<img loading="lazy" src="img/3d-dinosaur-game.png" alt="恐竜ゲーム3D" width="80" height="80">
+<span class="game-title">恐竜ゲーム3D</span>
+</a>
+<a href="https://kaloodinaz.github.io/dinosaurgame/naruto/">
+<img loading="lazy" src="img/naruto-dinosaur-game.png" alt="走れ！ナルト Google Chrome 恐竜ゲーム" width="80" height="80">
+<span class="game-title">走れ！ナルト恐竜ゲーム</span>
+</a>
+<a href="https://kaloodinaz.github.io/dinosaurgame/corona/">
+<img loading="lazy" src="img/corona-dinosaur-game.png" alt="走れ！コロナウイルスのGoogle Chrome 恐竜ゲーム" width="80" height="80">
+<span class="game-title">走れ！コロナウイルス恐竜ゲーム</span>
+</a>
+<a href="https://blockbreaker2.pages.dev/">
+<img loading="lazy" src="img/google-block-breaker.webp" alt="Googleブロック ブレイカー" width="80" height="80">
+<span class="game-title">Googleブロック ブレイカー</span>
+</a>
+</div>
+<div class="game-info">
+    <h2>Chrome 恐竜ゲームの紹介 🦖</h2>
+    <hr>
+    <div class="block block-728"><script type="text/javascript">
+     atOptions = {
+       'key' : 'd1d26e15f7c349fd8e403bb5ea491a31',
+       'format' : 'iframe',
+       'height' : 90,
+       'width' : 728,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/d1d26e15f7c349fd8e403bb5ea491a31/invoke.js"></script></div>
+       <div class="block block-300"><script type="text/javascript">
+     atOptions = {
+       'key' : '0fee57062f9bb330edc13a4e4349876d',
+       'format' : 'iframe',
+       'height' : 250,
+       'width' : 300,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/0fee57062f9bb330edc13a4e4349876d/invoke.js"></script></div>
+   
+    <p>Googleの「恐竜ゲーム（Dinosaur Game）」は、インターネット接続がない時に表示されるオフラインミニゲームで、ピクセルアートで描かれたかわいらしい恐竜が登場するアクションゲームです。このゲームはシンプルながら非常に中毒性が高く、世界中のユーザーに愛されています。プレイヤーは小さなティラノサウルスを操作し、サボテンや翼竜などの障害物を避けながら、できるだけ長く走り続けることが目標です。ゲームが進むにつれてスピードが増し、より高度な反射神経と集中力が求められます。</p>
+    
+    <p>また、ゲーム内でのスコアを更新することで、より高い難易度のチャレンジに挑戦でき、友達との競争や自己ベストの更新も楽しみの一つです。このゲームは、Google Chromeだけでなく、あらゆるブラウザでもオンラインで遊べるバージョンが提供されています。</p>
+    
+    <h2>ゲームの特徴</h2>
+    <ul>
+      <li>インターネット接続なしでもプレイ可能なオフラインモード</li>
+      <li>かわいらしいピクセルアートスタイル</li>
+      <li>シンプルで直感的な操作方法</li>
+      <li>ゲーム進行に応じて加速する難易度</li>
+      <li>ハイスコアを目指して無限に遊べるゲームプレイ</li>
+    </ul>
+    
+    <h2>恐竜ゲームスクリーンショット</h2>
+    <img loading="lazy" src="img/dinosaur-game-screenshot.png" alt="恐竜ゲームのスクリーンショット" style="max-width: 100%; height: auto; margin: 10px 0;">
+    
+    <h2>恐竜ゲームの操作方法</h2>
+    <ul>
+      <li><strong>スペースキー</strong>または<strong>上矢印キー</strong>でジャンプ</li>
+      <li><strong>下矢印キー</strong>でしゃがむ（翼竜が現れた時に使用）</li>
+      <li>障害物を避けながらできるだけ長く走り続け、ハイスコアを目指しましょう</li>
+    </ul>
+    
+    <h2>ゲームのヒント</h2>
+    <p>スピードが速くなるにつれて反応速度が求められるため、タイミングをしっかり掴むことが大切です。また、翼竜が現れるときは下矢印キーを使ってしゃがみながら避けると安全です。進むにつれて障害物が増え、より困難になりますが、それに伴い達成感も大きくなります。</p>
+    
+    <h2>オフラインでも遊べる！</h2>
+    <p>インターネット接続がなくても、Google Chromeでオフラインモードに切り替えるだけで「恐竜ゲーム」を楽しむことができます。オフライン中に暇な時間があれば、ぜひチャレンジしてみてください！</p>
+    
+</div>
+</div>
+<script>
+const gameFrame = document.querySelector('.game-frame');
+window.addEventListener('load', function() {
+gameFrame.focus();
+});
+window.addEventListener('keydown', function(e) {
+if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+e.preventDefault();
+gameFrame.focus();
+}
+});
+</script>
+
+<footer>
+<p>&copy; 2025 恐竜ゲーム. </p>
+<p><a href="https://suikagamejp.com/" target="_blank" rel="noopener">スイカゲーム</a> | <a href="https://kaloodinaz.github.io/2048-flappy/" target="_blank" rel="noopener">2048フラッピー</a></p>
+</footer>
+</body>
+</html>
